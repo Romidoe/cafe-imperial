@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, main {
+    border: 3px gray solid;
+    min-height: 100vh;
+    margin: 0.5rem;
+    min-width: 400px;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: auto 1rf auto;
+    /* background-color:#000000; */
+    /* font-family: 'Architects Daughter', cursive; */
+    background-image: url(img/estrelladelamuerte.jpg);
+}
+
+label {
+    color: red;
+    text-align: left;
+    margin-left: 1px;
+}
+
+input {
+    text-align: left;
+    margin-left: 1px;
+} 
+
+header {
+    background-color:black;
+    overflow: hidden;
+}
+
+.pie-pagina {
+    background-color:black;
+    /* width: 100%;
+    height: 300px; */
+    padding: 1em 0;
+    text-align: center;
+    border: 3px gray solid;
+    display: table;
+    overflow: hidden;
+
+}
+.pie-pagina .grupo-1 {
+    /* width: 100%; */
+    max-width: 1000px;
+    /* margin: auto; */
+    /* display: grid; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    overflow: hidden;
+}
+
+.pie-pagina .grupo-1 .box {
+    /* width: 100%; */
+    height: 50%;
+    border: transparent;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-bottom: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pie-pagina .grupo-1 .red-social a {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    width: 70px;
+    height: 60px;
+    color:red;
+    height: 50%;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-bottom: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-top: 30px;
+    margin-left: 100px; */
+    /* margin-right: auto;
+    margin-bottom: auto; */
+    transition: all 300ms ease;
+} 
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: coral;
+}
+
+.pie-pagina .grupo-2 {
+    /* padding: 15px 10px; */
+    margin-bottom: 10px;
+    bottom: 10px;
+    /* text-align: center; */
+    color: red;
+    overflow: hidden;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+.pie-pagina .grupo-3 {
+    /* width: 100%; */
+    max-width: 1200px;
+    /* margin: auto;
+    display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    float: right;
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-3 .contacto i, iframe {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 100px;
+    line-height: 30px;
+    color:red;
+    margin-right: 10px;
+    transition: all 300ms ease;
+    overflow: hidden;
+}
+
+/* .pie-pagina .grupo-3 .contacto {
+    color: red;
+    width: 60em;
+} */
+@media screen and (max-width: 800px){
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+.box h2 {
+    color: red;
+}
+
+header, footer {
+    font-family: "Architects Daughter", cursive;
+}
+
+/* .footer_p {
+    font-family: "Architects Daughter", cursive;
+    color: red;
+} */
+
+#mapa {
+    min-width: 50px;
+    min-height: auto;
+    border: 5px solid;
+    /* margin-left: 70rem;
+    margin-right: 0.5rem; */
+    
+}
+
+.contacto_footer {
+    margin-left: 0.5rem;
+    color: red;
+}
+
+.fab fa-instagram {
+    color: red;
+}
+
+
+.secciones {
+    border: 2px violet solid;
+    min-height: 50px;
+    margin: 0.5rem;
+}
+
+.header_logo {
+    display: inline-block;
+    /* overflow: auto; */
+    margin: 2rem;
+    background-color: none;
+    background-position: center;
+    box-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff, 2px 2px 7px blueviolet;
+    /* border-radius: 50%; */
+    /* border-radius: 6em; */
+    
+}
+
+h1 {
+    display: inline-block;
+    text-align: auto;
+    color:red;
+    font-size: 3em;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: 'Architects Daughter', cursive;
+    position: relative;
+    left: 40%;
+    top: 10%;
+    right: 50%;
+    transform: translateX(-40%) translateY(-60%);
+    text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff, 2px 2px 7px blueviolet;
+}
+
+h2, h3, p {
+    /* color: #950101; */
+    /* color: #fff; */
+    color: #FFE6E6;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    font-size: 1.5em;
+}
+
+#numero{
+    overflow: hidden;
+}
+
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+#contacto {
+    text-align: center;
+    color: red;
+    margin: 0;
+    /* text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff, 2px 2px 7px blueviolet; */
+
+}
+
+#comentario {
+    float: center;
+    width: 50%;
+    margin-top: 6px
+}
+
+input[type=submit] {
+    background-color: #c2c2c2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+    text-align: center;
+}
+
+input[type=reset] {
+    background-color: #c2c2c2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #enviar, input[type=submit] {
+    width: 20%;
+    margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #borrar, input[type=reset] {
+    width: 20%;
+    margin-top: 0;
+    }
+}
+
+#carta {
+    /* background-color: #323232; */
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    /* border: 3px solid #FFAC41; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF1E56;
+    text-shadow: 5px 5px 7px black, 5px 5px 7px black, 5px 5px 7px black, 5px 5px 7px gray, 2px 2px 7px black, 2px 2px 7px black;
+    text-decoration: double;
+    border-radius: 10%;
+}
+
+#carta_menu {
+    text-align: center;
+    color: #FF1E56;
+    text-decoration: double;
+    text-decoration-line: underline;
+}
+
+.header_menubar {
+    overflow: auto;
+    top: -50px;
+    max-width: 600px;
+    max-height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff, 2px 2px 7px blueviolet;
+}
+
+.header_menubar_ul {
+    list-style: none;
+    width: 500px;
+    /* margin-right: 10px; */
+    font-family: 'Architects Daughter', cursive;
+
+}
+
+.header_menubar li {
+    float: left;
+    top: 50rem;
+    /* margin-right: 10px; */
+    /* font-weight: 700; */
+    text-align: center;
+    margin: 0 0.5rem 0;
+}
+
+.header_menubar li a {
+    text-decoration: none;
+    float: left;
+    top: 50rem;
+    /* margin-right: 10px; */
+    /* font-weight: 700; */
+    text-align: center;
+    margin: 0 0.5rem 0;
+    color: red; 
+    
+}
+
+.header_menubar a:hover {
+    color:rgb(245, 245, 245);
+}
+
+.btn_menu {
+    margin-right: 30px;
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+    display: none;
+}
+
+ul.mostrar {
+    top: 65px;
+}
+
+    .header_menubar li a {
+        font-size: 16px;
+    }
+
+/* INICIA CODIGO PARA EL SLIDER */
+.container_slider {
+    width: 100%;
+    height: 400px;
+    margin: 5px auto;
+    overflow: hidden;
+    border: 8px solid gray;
+    /* box-shadow: 0 0 0 10px #fff,
+                0 15px 50px; */
+    position: relative;
+}
+
+
+.slider {
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider__section {
+    width: 100%;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn:hover {
+    background: #fff;
+}
+
+.slider__btn--left{
+    left: 10px;
+}
+
+.slider__btn--right{
+    right: 10px;
+}
